@@ -6,6 +6,7 @@ import userRouter from "./router/user/user.route.js";
 import postRouter from "./router/post/post.route.js";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
+import commentRouter from "./router/comment/comment.router.js";
 dotenv.config();
 
 const port = 8080;
@@ -37,6 +38,8 @@ app.get("/", async (_request, response) => {
 app.use("/", userRouter);
 
 app.use("/", postRouter);
+
+app.use("/comment", commentRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
