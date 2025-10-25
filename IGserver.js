@@ -39,7 +39,7 @@ app.use("/", userRouter);
 
 app.use("/", postRouter);
 
-app.use("/comment", commentRouter);
+app.use("/", commentRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
