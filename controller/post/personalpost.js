@@ -7,4 +7,3 @@ export const personalpost = async (req, res) => {
 
   res.status(200).json(mypost);
 };
-å;
