@@ -1,7 +1,7 @@
 import express from "express";
 import { authMiddleware } from "../../authMiddleware/authMiddleware.js";
-import { createComment } from "../../controller/comment/create-comment.js";
-import { getPostComment } from "../../controller/comment/get-post-comment.js";
+import { createComment } from "../../controller/comment/createComment.js";
+import { getPostComment } from "../../controller/comment/getPostComment.js";
 
 const commentRouter = express.Router();
 

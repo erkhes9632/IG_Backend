@@ -1,6 +1,6 @@
 import { postModel } from "../../schema/post.schema.js";
 
-export const postscreate = async (request, response) => {
+export const createpost = async (request, response) => {
   const { user, caption, images } = request.body;
 
   const post = await postModel.create({
